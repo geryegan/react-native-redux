@@ -4,11 +4,13 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import { Header } from './components/common';
+import LibraryList from './components/LibraryList';
 
 const App = () => (
         <Provider store={createStore(reducers)}>
             <View>
-            <Header text='Hello redux' />
+                <Header text='Hello redux' />
+                <LibraryList />
             </View>
         </Provider>
     );
