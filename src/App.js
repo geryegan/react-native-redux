@@ -8,7 +8,7 @@ import LibraryList from './components/LibraryList';
 
 const App = () => (
         <Provider store={createStore(reducers)}>
-            <View>
+            <View style={{ flex: 1 }}>
                 <Header text='Hello redux' />
                 <LibraryList />
             </View>
